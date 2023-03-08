@@ -63,8 +63,34 @@
     > `flex` will define how your items are going to “fill” over the available space along your main axis. Space will be divided according to each element's flex property.
 
   - flexDirection:
+
     > `flexDirection` controls the direction in which the children of a node are laid out.
+
     - column (default value) Align children from top to bottom.
     - row Align children from left to right.
     - column-reverse Align children from bottom to top.
     - row-reverse Align children from right to left.
+
+  - justifyContent:
+
+    > `justifyContent` describes how to align children within the main axis of their container.
+
+    - flex-start (default value) Align children of a container to the start of the container's main axis.
+    - flex-end Align children of a container to the end of the container's main axis.
+    - center Align children of a container in the center of the container's main axis.
+    - space-between Evenly space off children across the container's main axis, distributing the remaining space between the children.
+    - space-around Evenly space off children across the container's main axis, distributing the remaining space around the children.
+    - space-evenly Evenly distribute children within the alignment container along the main axis.
+
+  - alignItems:
+
+    > `alignItems` describes how to align children along the cross axis of their container.
+
+    - stretch (default value) Stretch children of a container to match the height of the container's cross axis.
+    - flex-start Align children of a container to the start of the container's cross axis.
+    - flex-end Align children of a container to the end of the container's cross axis.
+    - center Align children of a container in the center of the container's cross axis.
+    - baseline Align children of a container along a common baseline. Individual children can be set to be the reference baseline for their parents.
+
+  - alignSelf:
+    > `alignSelf` has the same options and effect as alignItems but instead of affecting the children within a container, apply this property to a single child to change its alignment within its parent. `alignSelf` overrides any option set by the parent with 'alignItems'.
