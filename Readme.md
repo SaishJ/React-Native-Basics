@@ -58,4 +58,13 @@
 
 - Flexbox
 
-  > `flex` will define how your items are going to “fill” over the available space along your main axis. Space will be divided according to each element's flex property.
+  - flex:
+
+    > `flex` will define how your items are going to “fill” over the available space along your main axis. Space will be divided according to each element's flex property.
+
+  - flexDirection:
+    > `flexDirection` controls the direction in which the children of a node are laid out.
+    - column (default value) Align children from top to bottom.
+    - row Align children from left to right.
+    - column-reverse Align children from bottom to top.
+    - row-reverse Align children from right to left.
