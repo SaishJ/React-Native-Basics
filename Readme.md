@@ -33,4 +33,8 @@
   3. TouchableWithoutFeedback: If you need to handle a tap gesture but you don't want any feedback to be displayed.
 
 - Button
+
   > A basic button component that should render nicely on any platform.
+
+- Alert
+  > Launches an alert dialog with the specified title and message.
