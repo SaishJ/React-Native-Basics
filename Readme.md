@@ -37,4 +37,9 @@
   > A basic button component that should render nicely on any platform.
 
 - Alert
+
   > Launches an alert dialog with the specified title and message.
+
+- Stylesheet
+
+  > A StyleSheet is an abstraction similar to CSS StyleSheets
