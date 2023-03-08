@@ -43,3 +43,11 @@
 - Stylesheet
 
   > A StyleSheet is an abstraction similar to CSS StyleSheets
+
+- Platform Specific Code
+
+  > Detect the platform (Android, iOS or Web).
+  > React Native provides two ways to organize your code and separate it by platform:
+
+  1. Using the Platform module: React Native provides a module that detects the platform in which the app is running.
+  2. Using platform-specific file extensions: React Native will detect when a file has a .ios. or .android. extension and load the relevant platform file when required from other components.
