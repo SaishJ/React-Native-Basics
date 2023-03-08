@@ -1,24 +1,25 @@
 import {
+  Dimensions,
   StyleSheet,
   SafeAreaView,
-  Button,
-  Alert,
   Platform,
   StatusBar,
+  View,
 } from "react-native";
 
+const DimmensionWidth = Dimensions.get("screen").width;
+
 export default function App() {
+  console.log(DimmensionWidth / 2);
   return (
     <SafeAreaView style={styles.container}>
-      <Button
-        title="Click Me"
-        onPress={() =>
-          Alert.alert("Button", "Description", [
-            { text: "Yes", onPress: () => console.log("Yes") },
-            { text: "No", onPress: () => console.log("No") },
-          ])
-        }
-      />
+      <View
+        style={{
+          backgroundColor: "dodgerblue",
+          width: DimmensionWidth / 2, // 50% width
+          height: 70,
+        }}
+      ></View>
     </SafeAreaView>
   );
 }

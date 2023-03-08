@@ -51,3 +51,7 @@
 
   1. Using the Platform module: React Native provides a module that detects the platform in which the app is running.
   2. Using platform-specific file extensions: React Native will detect when a file has a .ios. or .android. extension and load the relevant platform file when required from other components.
+
+- Dimensions
+
+  > Dimensions, it updates as the window's dimensions update. This works nicely with the React paradigm.
