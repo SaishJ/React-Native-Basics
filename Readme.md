@@ -19,6 +19,13 @@
   > `onPress` : make text clickable.
 
 - Image
+
   > In React Native displaying different types of images, including network images, static resources, temporary local images, and images from local disk, such as the camera roll.
   > In local images use `require` to load images.
   > In network images use `uri` to load image and also set `width` and `height` props.
+
+- Touchable
+  > The `Touchable` components provide the capability to capture tapping gestures, and can display feedback when a gesture is recognized.
+  1. TouchableHighlight: The view's background will be darkened when the user presses down.
+  2. TouchableOpacity: used to provide feedback by reducing the opacity of the button, allowing the background to be seen through while the user is pressing down.
+  3. TouchableWithoutFeedback: If you need to handle a tap gesture but you don't want any feedback to be displayed.
