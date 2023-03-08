@@ -25,7 +25,12 @@
   > In network images use `uri` to load image and also set `width` and `height` props.
 
 - Touchable
+
   > The `Touchable` components provide the capability to capture tapping gestures, and can display feedback when a gesture is recognized.
+
   1. TouchableHighlight: The view's background will be darkened when the user presses down.
   2. TouchableOpacity: used to provide feedback by reducing the opacity of the button, allowing the background to be seen through while the user is pressing down.
   3. TouchableWithoutFeedback: If you need to handle a tap gesture but you don't want any feedback to be displayed.
+
+- Button
+  > A basic button component that should render nicely on any platform.
