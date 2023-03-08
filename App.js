@@ -1,25 +1,9 @@
-import {
-  Dimensions,
-  StyleSheet,
-  SafeAreaView,
-  Platform,
-  StatusBar,
-  View,
-} from "react-native";
-
-const DimmensionWidth = Dimensions.get("screen").width;
+import { StyleSheet, SafeAreaView, Platform, Text } from "react-native";
 
 export default function App() {
-  console.log(DimmensionWidth / 2);
   return (
     <SafeAreaView style={styles.container}>
-      <View
-        style={{
-          backgroundColor: "dodgerblue",
-          width: DimmensionWidth / 2, // 50% width
-          height: 70,
-        }}
-      ></View>
+      <Text style={styles.text}>I Love React Native!</Text>
     </SafeAreaView>
   );
 }
@@ -28,6 +12,20 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#f8f9fa",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  text: {
+    color: "tomato",
+    ...Platform.select({
+      ios: {
+        fontFamily: "Roboto",
+        fontSize: 18,
+      },
+      android: {
+        fontFamily: "sans-serif",
+        fontSize: 20,
+      },
+    }),
   },
 });
