@@ -1,31 +1,11 @@
-import { StyleSheet, SafeAreaView, Platform, Text } from "react-native";
+import { View } from "react-native";
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.text}>I Love React Native!</Text>
-    </SafeAreaView>
+    <View style={{ flex: 1, backgroundColor: "#fff" }}>
+      <View style={{ backgroundColor: "dodgerblue", flex: 1 }} />
+      <View style={{ backgroundColor: "tomato", flex: 2 }} />
+      <View style={{ backgroundColor: "gold", flex: 3 }} />
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#f8f9fa",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  text: {
-    color: "tomato",
-    ...Platform.select({
-      ios: {
-        fontFamily: "Roboto",
-        fontSize: 18,
-      },
-      android: {
-        fontFamily: "sans-serif",
-        fontSize: 20,
-      },
-    }),
-  },
-});

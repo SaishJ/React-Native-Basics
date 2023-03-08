@@ -55,3 +55,7 @@
 - Dimensions
 
   > Dimensions, it updates as the window's dimensions update. This works nicely with the React paradigm.
+
+- Flexbox
+
+  > `flex` will define how your items are going to “fill” over the available space along your main axis. Space will be divided according to each element's flex property.
