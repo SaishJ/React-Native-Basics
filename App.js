@@ -16,26 +16,21 @@ export default function App() {
           backgroundColor: "dodgerblue",
           width: 100,
           height: 100,
+          borderWidth: 10,
+          borderColor: "royalblue",
+          borderRadius: 10,
+          borderTopWidth: 20,
+          borderTopRightRadius: 50,
         }}
       />
       <View
         style={{
-          backgroundColor: "tomato",
+          backgroundColor: "greenyellow",
           width: 100,
           height: 100,
-          position: "relative",
-          top: 20,
-          left: 20,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "gold",
-          width: 100,
-          height: 100,
-          position: "absolute",
-          top: 20,
-          right: 20,
+          borderWidth: 10,
+          borderColor: "green",
+          borderRadius: 50,
         }}
       />
     </View>
