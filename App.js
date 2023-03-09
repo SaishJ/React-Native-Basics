@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function App() {
   return (
@@ -11,30 +11,16 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <View
+      <Text
         style={{
-          backgroundColor: "dodgerblue",
-          width: 100,
-          height: 100,
-          padding: 25,
+          fontSize: 20,
+          fontStyle: "italic",
+          fontWeight: "500",
+          color: "tomato",
         }}
       >
-        <View
-          style={{
-            backgroundColor: "gold",
-            width: 50,
-            height: 50,
-          }}
-        />
-      </View>
-      <View
-        style={{
-          backgroundColor: "tomato",
-          width: 100,
-          height: 100,
-          margin: 20,
-        }}
-      />
+        I Love eact Native! Use for build native apps using JavaScript
+      </Text>
     </View>
   );
 }

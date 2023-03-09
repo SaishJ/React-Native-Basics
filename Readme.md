@@ -150,3 +150,11 @@
   - Padding: Is the space inside the component. Setting `padding` has the same effect as setting each of `paddingTop`, `paddingBottom`, `paddingLeft`, and `paddingRight`.
 
   - Margins: Is the space around the component. Setting `margin` has the same effect as setting each of `marginTop`, `marginLeft`, `marginBottom`, and `marginRight`.
+
+- Styling Text
+
+  - fontSize: number
+  - fontFamily -> based Platform specific
+  - fontWeight: string
+  - color: string
+  - fontStyle: string
