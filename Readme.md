@@ -93,4 +93,20 @@
     - baseline Align children of a container along a common baseline. Individual children can be set to be the reference baseline for their parents.
 
   - alignSelf:
+
     > `alignSelf` has the same options and effect as alignItems but instead of affecting the children within a container, apply this property to a single child to change its alignment within its parent. `alignSelf` overrides any option set by the parent with 'alignItems'.
+
+  - flexWrap:
+
+    > The `flexWrap` property is set on containers and it controls what happens when children overflow the size of the container along the main axis. By default, children are forced into a single line (which can shrink elements). If wrapping is allowed, items are wrapped into multiple lines along the main axis if needed. When wrapping lines, `alignContent` can be used to specify how the lines are placed in the container.
+
+  - alignContent:
+
+    > `alignContent` defines the distribution of lines along the cross-axis. This only has effect when items are wrapped to multiple lines using flexWrap.
+
+    - flex-start (default value) Align wrapped lines to the start of the container's cross axis.
+    - flex-end Align wrapped lines to the end of the container's cross axis.
+    - stretch (default value when using Yoga on the web) Stretch wrapped lines to match the height of the container's cross axis.
+    - center Align wrapped lines in the center of the container's cross axis.
+    - space-between Evenly space wrapped lines across the container's cross axis, distributing the remaining space between the lines.
+    - space-around Evenly space wrapped lines across the container's cross axis, distributing the remaining space around the lines.
