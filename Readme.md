@@ -158,3 +158,6 @@
   - fontWeight: string
   - color: string
   - fontStyle: string
+
+- Encapsulate Style
+  > Encapsulate all the styles of Text inside custom components.
