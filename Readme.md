@@ -166,3 +166,25 @@
 - Icons
 
   - @expo/vector-icons -> AntDesign, Feather, FontAwesome, Ionicons, MaterialCommunityIcons, MaterialIcons
+
+- FlatList
+
+> To display a list of items from an API. React Native component that allows you to render lists with zero hassle and minimal code.
+
+`FlatList Syntax`
+
+```jsx
+import {FlatList} from "react-native"
+
+<FlatList
+  data={
+    // The array to render, this can be JSON data from an API
+  }
+  keyExtractor={
+    // Extract keys for each item in the array, retrieve a unique key for each item in the array
+  }
+  renderItem={
+    // each item from the array will be rendered here or to render the items from the list
+  }
+/>;
+```

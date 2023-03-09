@@ -1,18 +1,41 @@
-import { View } from "react-native";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { SafeAreaView, FlatList, Platform, StatusBar } from "react-native";
+import ListItem from "./app/components/ListItem";
+
+const data = [
+  {
+    id: 1,
+    title: "T1",
+    description: "D1",
+  },
+  {
+    id: 2,
+    title: "T2",
+    description: "D2",
+  },
+  {
+    id: 3,
+    title: "T3",
+    description: "D3",
+  },
+];
 
 export default function App() {
   return (
-    <View
+    <SafeAreaView
       style={{
         flex: 1,
         backgroundColor: "#fff",
         flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
+        paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
       }}
     >
-      <MaterialCommunityIcons name="account" size={50} color="dodgerblue" />
-    </View>
+      <FlatList
+        data={data}
+        renderItem={({ item }) => (
+          <ListItem title={item.title} description={item.description} />
+        )}
+        keyExtractor={(item) => item.id}
+      />
+    </SafeAreaView>
   );
 }
