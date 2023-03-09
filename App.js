@@ -1,5 +1,5 @@
-import { Text, View } from "react-native";
-import AppText from "./app/components/AppText";
+import { View } from "react-native";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <AppText>I Love React Native!</AppText>
+      <MaterialCommunityIcons name="account" size={50} color="dodgerblue" />
     </View>
   );
 }

@@ -160,4 +160,9 @@
   - fontStyle: string
 
 - Encapsulate Style
+
   > Encapsulate all the styles of Text inside custom components.
+
+- Icons
+
+  - @expo/vector-icons -> AntDesign, Feather, FontAwesome, Ionicons, MaterialCommunityIcons, MaterialIcons
