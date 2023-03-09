@@ -130,3 +130,8 @@
     - relative (default value): An element is positioned relatively. This means an element is positioned according to the normal flow of the layout, and then offset relative to that position based on the values of top, right, bottom, and left. The offset does not affect the position of any sibling or parent elements. It moves the item relative to current position without changing the layout around them.
 
     - absolute: An element doesn't take part in the normal layout flow. It is instead laid out independent of its siblings. The position is determined based on the top, right, bottom, and left values. It moves the item relative to its parent and laied out around it.
+
+- Border
+  - borderWidth
+  - borderRadius
+  - borderColor
