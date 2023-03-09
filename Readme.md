@@ -110,3 +110,14 @@
     - center Align wrapped lines in the center of the container's cross axis.
     - space-between Evenly space wrapped lines across the container's cross axis, distributing the remaining space between the lines.
     - space-around Evenly space wrapped lines across the container's cross axis, distributing the remaining space around the lines.
+
+  - flexBasis:
+
+    > `flexBasis` is an axis-independent way of providing the default size of an item along the main axis. `flexBasis` map width or height property.
+
+  - flexGrow:
+
+    > `flexGrow` describes how any space within a container should be distributed among its children along the main axis. A container will distribute any remaining space according to the flex grow values specified by its children. To fill available space
+
+  - flexShrink:
+    > `flexShrink` describes how to shrink children along the main axis in the case in which the total size of the children overflows the size of the container on the main axis.
