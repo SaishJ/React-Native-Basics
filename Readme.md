@@ -132,6 +132,15 @@
     - absolute: An element doesn't take part in the normal layout flow. It is instead laid out independent of its siblings. The position is determined based on the top, right, bottom, and left values. It moves the item relative to its parent and laied out around it.
 
 - Border
+
   - borderWidth
   - borderRadius
   - borderColor
+
+- Shadows
+
+  - elevation: number -> Use elevation for android only.
+    > Below properties only support on iOS
+  - shadowRadius: number
+  - shadowOpacity: number
+  - shadowOffset: {width: number, height: number}
