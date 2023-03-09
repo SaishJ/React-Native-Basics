@@ -144,3 +144,9 @@
   - shadowRadius: number
   - shadowOpacity: number
   - shadowOffset: {width: number, height: number}
+
+- Padding and Margins
+
+  - Padding: Is the space inside the component. Setting `padding` has the same effect as setting each of `paddingTop`, `paddingBottom`, `paddingLeft`, and `paddingRight`.
+
+  - Margins: Is the space around the component. Setting `margin` has the same effect as setting each of `marginTop`, `marginLeft`, `marginBottom`, and `marginRight`.

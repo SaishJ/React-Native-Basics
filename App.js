@@ -16,13 +16,23 @@ export default function App() {
           backgroundColor: "dodgerblue",
           width: 100,
           height: 100,
-          // These property only work in android
-          elevation: 10,
-          // These properties only works on iOS
-          shadowColor: "royalblue",
-          shadowOffset: { width: 10, height: 10 },
-          shadowOpacity: 1,
-          shadowRadius: 10,
+          padding: 25,
+        }}
+      >
+        <View
+          style={{
+            backgroundColor: "gold",
+            width: 50,
+            height: 50,
+          }}
+        />
+      </View>
+      <View
+        style={{
+          backgroundColor: "tomato",
+          width: 100,
+          height: 100,
+          margin: 20,
         }}
       />
     </View>
