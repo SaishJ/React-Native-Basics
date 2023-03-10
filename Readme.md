@@ -219,3 +219,7 @@ import {FlatList} from "react-native"
 - Switch
 
 > Renders a boolean input. This is a controlled component that requires an onValueChange callback that updates the value prop in order for the component to reflect user actions.
+
+- Modal
+
+> The `Modal` component is a basic way to present content above an enclosing view.

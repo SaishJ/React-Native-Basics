@@ -11,7 +11,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import React, { useState } from "react";
 import PickerItem from "./PickerItem";
 
-const AppPicker = ({ items }) => {
+const AppPicker = ({ items, onChangeItem, selectItem }) => {
   const [modal, setModal] = useState(false);
 
   return (
@@ -19,7 +19,7 @@ const AppPicker = ({ items }) => {
       <TouchableWithoutFeedback onPress={() => setModal(true)}>
         <View style={styles.container}>
           <MaterialCommunityIcons name="apps" size={20} style={styles.icon} />
-          <Text style={styles.text}>Category</Text>
+          <Text style={styles.text}>{selectItem}</Text>
           <MaterialCommunityIcons name="chevron-down" size={20} />
         </View>
       </TouchableWithoutFeedback>
@@ -28,7 +28,15 @@ const AppPicker = ({ items }) => {
         <FlatList
           data={items}
           keyExtractor={(item) => item.id}
-          renderItem={({ item }) => <PickerItem label={item.label} />}
+          renderItem={({ item }) => (
+            <PickerItem
+              label={item.label}
+              onPress={() => {
+                setModal(false);
+                onChangeItem(item.label);
+              }}
+            />
+          )}
         />
       </Modal>
     </>
