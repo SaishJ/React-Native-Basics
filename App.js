@@ -2,6 +2,12 @@ import { SafeAreaView, Platform, StatusBar } from "react-native";
 import AppPicker from "./app/components/AppPicker";
 
 export default function App() {
+  const pickerItems = [
+    { id: 1, label: "Clothing" },
+    { id: 2, label: "Cameras" },
+    { id: 3, label: "TV" },
+  ];
+
   return (
     <SafeAreaView
       style={{
@@ -9,7 +15,7 @@ export default function App() {
         paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
       }}
     >
-      <AppPicker />
+      <AppPicker items={pickerItems} />
     </SafeAreaView>
   );
 }

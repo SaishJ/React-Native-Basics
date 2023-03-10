@@ -5,11 +5,13 @@ import {
   TouchableWithoutFeedback,
   Modal,
   Button,
+  FlatList,
 } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import React, { useState } from "react";
+import PickerItem from "./PickerItem";
 
-const AppPicker = () => {
+const AppPicker = ({ items }) => {
   const [modal, setModal] = useState(false);
 
   return (
@@ -22,7 +24,12 @@ const AppPicker = () => {
         </View>
       </TouchableWithoutFeedback>
       <Modal visible={modal} animationType="slide">
-        <Button title="Close" onPress={() => setModal(false)} />
+        <Button color="#ddd" title="Close" onPress={() => setModal(false)} />
+        <FlatList
+          data={items}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => <PickerItem label={item.label} />}
+        />
       </Modal>
     </>
   );
