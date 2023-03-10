@@ -211,3 +211,7 @@ import {FlatList} from "react-native"
   }
 />;
 ```
+
+- TextInput
+
+> Used for inputting text into the app via a keyboard. Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad.
