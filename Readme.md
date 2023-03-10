@@ -215,3 +215,7 @@ import {FlatList} from "react-native"
 - TextInput
 
 > Used for inputting text into the app via a keyboard. Props provide configurability for several features, such as auto-correction, auto-capitalization, placeholder text, and different keyboard types, such as a numeric keypad.
+
+- Switch
+
+> Renders a boolean input. This is a controlled component that requires an onValueChange callback that updates the value prop in order for the component to reflect user actions.
