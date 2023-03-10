@@ -188,3 +188,26 @@ import {FlatList} from "react-native"
   }
 />;
 ```
+
+- Seprator
+
+> Add `ItemSepratorComponent` prop in `FlatList` component.
+
+```jsx
+import {FlatList} from "react-native"
+
+<FlatList
+  data={
+    // The array to render, this can be JSON data from an API
+  }
+  keyExtractor={
+    // Extract keys for each item in the array, retrieve a unique key for each item in the array
+  }
+  renderItem={
+    // each item from the array will be rendered here or to render the items from the list
+  }
+  ItemSepratorComponent={
+    // Add seprator in each item.
+  }
+/>;
+```

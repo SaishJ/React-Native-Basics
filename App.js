@@ -1,5 +1,6 @@
 import { SafeAreaView, FlatList, Platform, StatusBar } from "react-native";
 import ListItem from "./app/components/ListItem";
+import Seprator from "./app/components/Seprator";
 
 const data = [
   {
@@ -35,6 +36,7 @@ export default function App() {
           <ListItem title={item.title} description={item.description} />
         )}
         keyExtractor={(item) => item.id}
+        ItemSeparatorComponent={Seprator}
       />
     </SafeAreaView>
   );

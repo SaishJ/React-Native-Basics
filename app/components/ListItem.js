@@ -3,7 +3,7 @@ import AppText from "./AppText";
 
 const ListItem = ({ title, description }) => {
   return (
-    <View style={{ borderBottomWidth: 1, borderColor: "grey" }}>
+    <View style={{ padding: 10 }}>
       <AppText>{title}</AppText>
       <AppText>{description}</AppText>
     </View>
