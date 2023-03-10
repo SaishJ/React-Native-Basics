@@ -1,13 +1,30 @@
-import { View, Text, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableWithoutFeedback,
+  Modal,
+  Button,
+} from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import React, { useState } from "react";
 
 const AppPicker = () => {
+  const [modal, setModal] = useState(false);
+
   return (
-    <View style={styles.container}>
-      <MaterialCommunityIcons name="apps" size={20} style={styles.icon} />
-      <Text style={styles.text}>Category</Text>
-      <MaterialCommunityIcons name="chevron-down" size={20} />
-    </View>
+    <>
+      <TouchableWithoutFeedback onPress={() => setModal(true)}>
+        <View style={styles.container}>
+          <MaterialCommunityIcons name="apps" size={20} style={styles.icon} />
+          <Text style={styles.text}>Category</Text>
+          <MaterialCommunityIcons name="chevron-down" size={20} />
+        </View>
+      </TouchableWithoutFeedback>
+      <Modal visible={modal} animationType="slide">
+        <Button title="Close" onPress={() => setModal(false)} />
+      </Modal>
+    </>
   );
 };
 
