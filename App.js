@@ -1,26 +1,33 @@
-import React, { useState } from "react";
-import { SafeAreaView, Platform, StatusBar } from "react-native";
-import AppPicker from "./app/components/AppPicker";
+import React, { useEffect, useState } from "react";
+import { FlatList, Platform, StatusBar, SafeAreaView } from "react-native";
+import axios from "axios";
+import AppText from "./app/components/AppText";
 
 export default function App() {
-  const [selectItem, setSelectItem] = useState("Category");
-  const pickerItems = [
-    { id: 1, label: "Clothing" },
-    { id: 2, label: "Cameras" },
-    { id: 3, label: "TV" },
-  ];
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://jsonplaceholder.typicode.com/users/1/posts")
+      .then((res) => {
+        // console.log(res);
+        setData(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
   return (
     <SafeAreaView
       style={{
         backgroundColor: "#fff",
         paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+        alignItems: "center",
       }}
     >
-      <AppPicker
-        selectItem={selectItem}
-        onChangeItem={(label) => setSelectItem(label)}
-        items={pickerItems}
+      <FlatList
+        data={data}
+        keyExtractor={(data) => data.id}
+        renderItem={({ item }) => <AppText>{item.title}</AppText>}
       />
     </SafeAreaView>
   );
